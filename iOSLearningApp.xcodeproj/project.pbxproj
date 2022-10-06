@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A7E9A4B28EE439C00AD7201 /* iOSLearningAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A4A28EE439C00AD7201 /* iOSLearningAppApp.swift */; };
+		7A7E9A4B28EE439C00AD7201 /* IOSLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A4A28EE439C00AD7201 /* IOSLearningApp.swift */; };
 		7A7E9A4D28EE439C00AD7201 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A4C28EE439C00AD7201 /* ContentView.swift */; };
 		7A7E9A4F28EE439E00AD7201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7E9A4E28EE439E00AD7201 /* Assets.xcassets */; };
 		7A7E9A5228EE439E00AD7201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7E9A5128EE439E00AD7201 /* Preview Assets.xcassets */; };
-		7A7E9A5C28EE439E00AD7201 /* iOSLearningAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A5B28EE439E00AD7201 /* iOSLearningAppTests.swift */; };
-		7A7E9A6628EE439E00AD7201 /* iOSLearningAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A6528EE439E00AD7201 /* iOSLearningAppUITests.swift */; };
-		7A7E9A6828EE439E00AD7201 /* iOSLearningAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A6728EE439E00AD7201 /* iOSLearningAppUITestsLaunchTests.swift */; };
+		7A7E9A5C28EE439E00AD7201 /* IOSLearningAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A5B28EE439E00AD7201 /* IOSLearningAppTests.swift */; };
+		7A7E9A6628EE439E00AD7201 /* IOSLearningAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A6528EE439E00AD7201 /* IOSLearningAppUITests.swift */; };
+		7A7E9A6828EE439E00AD7201 /* IOSLearningAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A6728EE439E00AD7201 /* IOSLearningAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +35,15 @@
 
 /* Begin PBXFileReference section */
 		7A7E9A4728EE439C00AD7201 /* iOSLearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A7E9A4A28EE439C00AD7201 /* iOSLearningAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLearningAppApp.swift; sourceTree = "<group>"; };
+		7A7E9A4A28EE439C00AD7201 /* IOSLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLearningApp.swift; sourceTree = "<group>"; };
 		7A7E9A4C28EE439C00AD7201 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A7E9A4E28EE439E00AD7201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A7E9A5128EE439E00AD7201 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A7E9A5728EE439E00AD7201 /* iOSLearningAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLearningAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A7E9A5B28EE439E00AD7201 /* iOSLearningAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLearningAppTests.swift; sourceTree = "<group>"; };
+		7A7E9A5B28EE439E00AD7201 /* IOSLearningAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLearningAppTests.swift; sourceTree = "<group>"; };
 		7A7E9A6128EE439E00AD7201 /* iOSLearningAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLearningAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A7E9A6528EE439E00AD7201 /* iOSLearningAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLearningAppUITests.swift; sourceTree = "<group>"; };
-		7A7E9A6728EE439E00AD7201 /* iOSLearningAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLearningAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A7E9A6528EE439E00AD7201 /* IOSLearningAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLearningAppUITests.swift; sourceTree = "<group>"; };
+		7A7E9A6728EE439E00AD7201 /* IOSLearningAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLearningAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		7A7E9A4928EE439C00AD7201 /* iOSLearningApp */ = {
 			isa = PBXGroup;
 			children = (
-				7A7E9A4A28EE439C00AD7201 /* iOSLearningAppApp.swift */,
+				7A7E9A4A28EE439C00AD7201 /* IOSLearningApp.swift */,
 				7A7E9A4C28EE439C00AD7201 /* ContentView.swift */,
 				7A7E9A4E28EE439E00AD7201 /* Assets.xcassets */,
 				7A7E9A5028EE439E00AD7201 /* Preview Content */,
@@ -113,7 +113,7 @@
 		7A7E9A5A28EE439E00AD7201 /* iOSLearningAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				7A7E9A5B28EE439E00AD7201 /* iOSLearningAppTests.swift */,
+				7A7E9A5B28EE439E00AD7201 /* IOSLearningAppTests.swift */,
 			);
 			path = iOSLearningAppTests;
 			sourceTree = "<group>";
@@ -121,8 +121,8 @@
 		7A7E9A6428EE439E00AD7201 /* iOSLearningAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7A7E9A6528EE439E00AD7201 /* iOSLearningAppUITests.swift */,
-				7A7E9A6728EE439E00AD7201 /* iOSLearningAppUITestsLaunchTests.swift */,
+				7A7E9A6528EE439E00AD7201 /* IOSLearningAppUITests.swift */,
+				7A7E9A6728EE439E00AD7201 /* IOSLearningAppUITestsLaunchTests.swift */,
 			);
 			path = iOSLearningAppUITests;
 			sourceTree = "<group>";
@@ -137,6 +137,7 @@
 				7A7E9A4328EE439C00AD7201 /* Sources */,
 				7A7E9A4428EE439C00AD7201 /* Frameworks */,
 				7A7E9A4528EE439C00AD7201 /* Resources */,
+				7AA69DA328EE56070056F192 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,13 +253,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AA69DA328EE56070056F192 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A7E9A4328EE439C00AD7201 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7A7E9A4D28EE439C00AD7201 /* ContentView.swift in Sources */,
-				7A7E9A4B28EE439C00AD7201 /* iOSLearningAppApp.swift in Sources */,
+				7A7E9A4B28EE439C00AD7201 /* IOSLearningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7E9A5C28EE439E00AD7201 /* iOSLearningAppTests.swift in Sources */,
+				7A7E9A5C28EE439E00AD7201 /* IOSLearningAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7E9A6828EE439E00AD7201 /* iOSLearningAppUITestsLaunchTests.swift in Sources */,
-				7A7E9A6628EE439E00AD7201 /* iOSLearningAppUITests.swift in Sources */,
+				7A7E9A6828EE439E00AD7201 /* IOSLearningAppUITestsLaunchTests.swift in Sources */,
+				7A7E9A6628EE439E00AD7201 /* IOSLearningAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
