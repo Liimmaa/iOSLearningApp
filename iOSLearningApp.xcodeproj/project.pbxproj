@@ -14,6 +14,7 @@
 		7A7E9A5C28EE439E00AD7201 /* IOSLearningAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A5B28EE439E00AD7201 /* IOSLearningAppTests.swift */; };
 		7A7E9A6628EE439E00AD7201 /* IOSLearningAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A6528EE439E00AD7201 /* IOSLearningAppUITests.swift */; };
 		7A7E9A6828EE439E00AD7201 /* IOSLearningAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A6728EE439E00AD7201 /* IOSLearningAppUITestsLaunchTests.swift */; };
+		7AA69DA528EE5BB80056F192 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 7AA69DA428EE5BB80056F192 /* codemagic.yaml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7A7E9A6128EE439E00AD7201 /* iOSLearningAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLearningAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7E9A6528EE439E00AD7201 /* IOSLearningAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLearningAppUITests.swift; sourceTree = "<group>"; };
 		7A7E9A6728EE439E00AD7201 /* IOSLearningAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLearningAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7AA69DA428EE5BB80056F192 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		7A7E9A3E28EE439C00AD7201 = {
 			isa = PBXGroup;
 			children = (
+				7AA69DA428EE5BB80056F192 /* codemagic.yaml */,
 				7A7E9A4928EE439C00AD7201 /* iOSLearningApp */,
 				7A7E9A5A28EE439E00AD7201 /* iOSLearningAppTests */,
 				7A7E9A6428EE439E00AD7201 /* iOSLearningAppUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA69DA528EE5BB80056F192 /* codemagic.yaml in Resources */,
 				7A7E9A5228EE439E00AD7201 /* Preview Assets.xcassets in Resources */,
 				7A7E9A4F28EE439E00AD7201 /* Assets.xcassets in Resources */,
 			);
