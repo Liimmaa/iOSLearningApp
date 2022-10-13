@@ -37,7 +37,10 @@ struct TrendingNews: View {
     }
     var trendingNewsList: some View {
         GeometryReader { geo in
-            ScrollView(.horizontal, showsIndicators: false) {
+            ScrollView(
+                .horizontal,
+                showsIndicators: false
+            ) {
                 HStack(spacing: 20) {
                     ForEach(0..<10) {_ in
                         trendingNewsWidget
