@@ -11,14 +11,7 @@ struct HomeView: View {
     var body: some View {
         TabView {
             NavigationView {
-                VStack(alignment: .leading) {
-                    header
-                    navigationLink
-                    popularNewsHeader
-                    popularNews
-                }
-                .navigationBarHidden(true)
-                .ignoresSafeArea()
+                homeContent
             }
             .tabItem {
                 Image(systemName: "house")
@@ -45,6 +38,16 @@ struct HomeView: View {
         NavigationBar(navigationTitle: "NEWS", rightIcon1: "magnifyingglass", rightIcon2: "bell")
             .padding(.top, 40)
     }
+    var homeContent: some View {
+        VStack(alignment: .leading) {
+            header
+            navigationLink
+            popularNewsHeader
+            popularNews
+        }
+        .navigationBarHidden(true)
+        .ignoresSafeArea()
+    }
     var navigationLink: some View {
         NavigationLink(destination: DetailView()) {
             trendingNews
@@ -65,9 +68,7 @@ struct HomeView: View {
     }
     var popularNews: some View {
         PopularNews(newsImage: "people",
-                    newsTitle: "The 'Lucky Country' is Facing A Crucial Test",
-                    newsOutlet: "By BBC News",
-                    readTime: "1 min read")
+                    newsTitle: "The 'Lucky Country' is Facing A Crucial Test", newsOutlet: "BBC News")
         .background(Color(UIColor.systemGray6))
     }
 }

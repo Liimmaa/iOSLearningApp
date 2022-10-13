@@ -14,7 +14,9 @@ struct SearchView: View {
             header
             searchBar
                 .padding()
+            ScrollView(.horizontal, showsIndicators: false) {
             searchOptionsView
+            }
             popularNewsHeader
             popularNews
         }
@@ -34,8 +36,7 @@ struct SearchView: View {
     }
     var popularNews: some View {
         PopularNews(newsImage: "people",
-                    newsTitle: "The 'Lucky Country' is Facing A Crucial Test",
-                    newsOutlet: "By BBC News")
+                    newsTitle: "The 'Lucky Country' is Facing A Crucial Test", newsOutlet: "BBC News")
         .background(Color(UIColor.systemGray6))
     }
     var searchBar: some View {
@@ -49,7 +50,6 @@ struct SearchView: View {
         .cornerRadius(10)
     }
     var searchOptionsView: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20) {
                 ForEach(0..<5) {_ in
                     RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(Color.gray, lineWidth: 1)
@@ -59,7 +59,6 @@ struct SearchView: View {
                 }
             }
             .padding()
-        }
     }
 }
 

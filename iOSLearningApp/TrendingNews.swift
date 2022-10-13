@@ -47,7 +47,7 @@ struct TrendingNews: View {
                             .frame(width: geo.size.width * 0.85)
                     }
                 }
-                .padding()
+                .padding(.horizontal)
             }
         }
         .frame(height: 250)
