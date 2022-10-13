@@ -13,9 +13,7 @@ struct HomeView: View {
             NavigationView {
                 VStack(alignment: .leading) {
                     header
-                    NavigationLink(destination: DetailView()) {
-                        trendingNews
-                    }
+                    navigationLink
                     popularNewsHeader
                     popularNews
                 }
@@ -46,6 +44,11 @@ struct HomeView: View {
     var header: some View {
         NavigationBar(navigationTitle: "NEWS", rightIcon1: "magnifyingglass", rightIcon2: "bell")
             .padding(.top, 40)
+    }
+    var navigationLink: some View {
+        NavigationLink(destination: DetailView()) {
+            trendingNews
+        }
     }
     var trendingNews: some View {
         TrendingNews(newsTitle: "Russia Claims Nearly 1000 Ukrainians Have Surrendered to Azovstal")

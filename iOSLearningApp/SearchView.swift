@@ -14,17 +14,7 @@ struct SearchView: View {
             header
             searchBar
                 .padding()
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 20) {
-                        ForEach(0..<5) {_ in
-                            RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(Color.gray, lineWidth: 1)
-                                .frame(width: 130, height: 55)
-                                .overlay(Text("All"))
-                                .font(.body)
-                        }
-                    }
-                    .padding()
-                }
+            searchOptionsView
             popularNewsHeader
             popularNews
         }
@@ -57,6 +47,19 @@ struct SearchView: View {
         .padding(15)
         .background(Color(UIColor.systemGray5))
         .cornerRadius(10)
+    }
+    var searchOptionsView: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 20) {
+                ForEach(0..<5) {_ in
+                    RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(Color.gray, lineWidth: 1)
+                        .frame(width: 130, height: 55)
+                        .overlay(Text("All"))
+                        .font(.body)
+                }
+            }
+            .padding()
+        }
     }
 }
 

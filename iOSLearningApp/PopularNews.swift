@@ -22,19 +22,7 @@ struct PopularNews: View {
                             .frame(width: 80, height: 80, alignment: .leading)
                             .scaledToFit()
                             .cornerRadius(10.0)
-                        VStack(alignment: .leading, spacing: 20) {
-                            NewsTitle(newsTitle: newsTitle, font: .system(size: 18, weight: .semibold))
-                            HStack {
-                                Text("By \(newsOutlet)")
-                                Spacer()
-                                if let readTime = readTime {
-                                    Text(readTime)
-                                }
-                            }
-                            .foregroundColor(.gray)
-                            .font(.system(size: 15, weight: .semibold))
-                        }
-                        .padding()
+                        newsTitleRow
                     }
                     .padding(10)
                     .background(Color.white)
@@ -43,6 +31,24 @@ struct PopularNews: View {
                 }
             }
         }
+    }
+    var newsOutlet2: some View {
+        HStack {
+            Text("By \(newsOutlet)")
+            Spacer()
+            if let readTime = readTime {
+                Text(readTime)
+            }
+        }
+        .foregroundColor(.gray)
+        .font(.system(size: 15, weight: .semibold))
+    }
+    var newsTitleRow: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            NewsTitle(newsTitle: newsTitle, font: .system(size: 18, weight: .semibold))
+            newsOutlet2
+        }
+        .padding()
     }
 }
 

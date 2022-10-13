@@ -15,12 +15,7 @@ struct DetailView: View {
                 VStack(alignment: .leading, spacing: 25) {
                     imageReader
                     newsTitle
-                    HStack(alignment: .top, spacing: 30) {
-                        Text("By BBC NEWS")
-                        Text("1 min read")
-                    }
-                    .foregroundColor(.gray)
-                    .font(.system(size: 15, weight: .semibold))
+                    newsOutlet
                     newsDetails
                 }
             }
@@ -48,6 +43,14 @@ struct DetailView: View {
         NewsTitle(newsTitle: "Russia Claims Nearly 1,000 Ukrainians Have Surrendered At Azovstal",
                   font: .system(size: 22, weight: .semibold))
             .lineSpacing(10)
+    }
+    var newsOutlet: some View {
+        HStack(alignment: .top, spacing: 30) {
+            Text("By BBC NEWS")
+            Text("1 min read")
+        }
+        .foregroundColor(.gray)
+        .font(.system(size: 15, weight: .semibold))
     }
     var newsDetails: some View {
         Text("Our live coverage of the war in Ukraine has moved here. The Soviet victory flag from World War II is beginning to appear across occupied parts of ")
