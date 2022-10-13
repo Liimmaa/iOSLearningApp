@@ -15,24 +15,41 @@ struct PopularNews: View {
     var body: some View {
         ScrollView {
             ForEach(0..<10) {_ in
-                VStack(spacing: 20) {
-                    HStack {
-                        Image(newsImage)
-                            .resizable()
-                            .frame(width: 80, height: 80, alignment: .leading)
-                            .scaledToFit()
-                            .cornerRadius(10.0)
-                        newsTitleRow
-                    }
-                    .padding(10)
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .padding(.horizontal)
-                }
+                popularNewsWidget
             }
         }
     }
-    var newsOutlet2: some View {
+    var popularNewsWidget: some View {
+        VStack(spacing: 20) {
+            HStack {
+                Image(newsImage)
+                    .resizable()
+                    .frame(width: 80, height: 80, alignment: .leading)
+                    .scaledToFit()
+                    .cornerRadius(10.0)
+                newsTitleRow
+            }
+            .padding(10)
+            .background(Color.white)
+            .cornerRadius(10)
+            .padding(.horizontal)
+        }
+    }
+    var newsTitleRow: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            NewsTitle(newsTitle: newsTitle, font: .system(size: 18, weight: .semibold))
+            NewsOutlet(newsOutlet: newsOutlet, readTime: readTime)
+            .foregroundColor(.gray)
+            .font(.system(size: 15, weight: .semibold))
+        }
+        .padding()
+    }
+}
+
+struct NewsOutlet: View {
+    var newsOutlet: String
+    var readTime: String?
+    var body: some View {
         HStack {
             Text("By \(newsOutlet)")
             Spacer()
@@ -40,15 +57,6 @@ struct PopularNews: View {
                 Text(readTime)
             }
         }
-        .foregroundColor(.gray)
-        .font(.system(size: 15, weight: .semibold))
-    }
-    var newsTitleRow: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            NewsTitle(newsTitle: newsTitle, font: .system(size: 18, weight: .semibold))
-            newsOutlet2
-        }
-        .padding()
     }
 }
 

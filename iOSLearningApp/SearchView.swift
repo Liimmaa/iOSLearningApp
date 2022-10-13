@@ -34,8 +34,7 @@ struct SearchView: View {
     }
     var popularNews: some View {
         PopularNews(newsImage: "people",
-                    newsTitle: "The 'Lucky Country' is Facing A Crucial Test",
-                    newsOutlet: "By BBC News")
+                    newsTitle: "The 'Lucky Country' is Facing A Crucial Test", newsOutlet: "BBC News")
         .background(Color(UIColor.systemGray6))
     }
     var searchBar: some View {

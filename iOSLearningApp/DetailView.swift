@@ -11,14 +11,7 @@ struct DetailView: View {
     var body: some View {
         VStack {
             header
-            ScrollView {
-                VStack(alignment: .leading, spacing: 25) {
-                    imageReader
-                    newsTitle
-                    newsOutlet
-                    newsDetails
-                }
-            }
+            newsDetail
         }
         .padding()
         .ignoresSafeArea()
@@ -27,6 +20,16 @@ struct DetailView: View {
     var header: some View {
         NavigationBar(navigationTitle: "DETAIL", rightIcon1: "square.and.arrow.up", rightIcon2: "bookmark")
             .padding(.top, 25)
+    }
+    var newsDetail: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 25) {
+                imageReader
+                newsTitle
+                newsOutlet
+                newsSummary
+            }
+        }
     }
     var imageReader: some View {
         GeometryReader { geo in
@@ -45,14 +48,11 @@ struct DetailView: View {
             .lineSpacing(10)
     }
     var newsOutlet: some View {
-        HStack(alignment: .top, spacing: 30) {
-            Text("By BBC NEWS")
-            Text("1 min read")
-        }
+        NewsOutlet(newsOutlet: "BBC NEWS", readTime: "1 min read")
         .foregroundColor(.gray)
         .font(.system(size: 15, weight: .semibold))
     }
-    var newsDetails: some View {
+    var newsSummary: some View {
         Text("Our live coverage of the war in Ukraine has moved here. The Soviet victory flag from World War II is beginning to appear across occupied parts of ")
             .lineSpacing(10)
             .foregroundColor(Color(UIColor.gray))
