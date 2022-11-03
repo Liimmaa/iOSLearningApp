@@ -14,31 +14,36 @@ struct HomeView: View {
                 homeContent
             }
             .tabItem {
-                Image(systemName: "house")
-                Text("Home")
+                Image(uiImage: Constants.Image.tabHome)
+                Text(Constants.tabTitleHome)
             }
             SearchView()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
+                    Image(uiImage: Constants.Image.tabSearch)
+                    Text(Constants.tabTitleSearch)
                 }
-            Text("Saved")
+            Text(Constants.placeholder)
                 .tabItem {
-                    Image(systemName: "bookmark")
-                    Text("Saved")
+                    Image(uiImage: Constants.Image.tabSaved)
+                    Text(Constants.tabTitleSaved)
                 }
-            Text("Profile")
+            Text(Constants.placeholder)
                 .tabItem {
-                    Image(systemName: "person")
-                    Text("Profile")
+                    Image(uiImage: Constants.Image.tabProfile)
+                    Text(Constants.tabTitleProfile)
                 }
         }
     }
-    var header: some View {
-        NavigationBar(navigationTitle: "NEWS", rightIcon1: "magnifyingglass", rightIcon2: "bell")
+    private var header: some View {
+        NavigationBar(navigationTitle:
+                        Constants.navNewsTitle,
+                      rightIcon1:
+                        Constants.Image.navRightSearchIcon,
+                      rightIcon2:
+                        Constants.Image.navRightNotificationIcon)
             .padding(.top, 40)
     }
-    var homeContent: some View {
+    private var homeContent: some View {
         VStack(alignment: .leading) {
             header
             navigationLink
@@ -48,27 +53,31 @@ struct HomeView: View {
         .navigationBarHidden(true)
         .ignoresSafeArea()
     }
-    var navigationLink: some View {
+    private var navigationLink: some View {
         NavigationLink(destination: DetailView()) {
             trendingNews
         }
     }
-    var trendingNews: some View {
-        TrendingNews(newsTitle: "Russia Claims Nearly 1000 Ukrainians Have Surrendered to Azovstal")
+    private var trendingNews: some View {
+        TrendingNews(newsTitle: Constants.trendingNewsTitle)
     }
-    var popularNewsHeader: some View {
+    private var popularNewsHeader: some View {
         HStack {
-            Text("Popular News")
+            Text(Constants.popularNews)
             Spacer()
-            Text("Show More")
+            Text(Constants.popularNewsSubtitle)
                 .foregroundColor(.gray)
         }
         .font(.headline)
         .padding()
     }
-    var popularNews: some View {
-        PopularNews(newsImage: "people",
-                    newsTitle: "The 'Lucky Country' is Facing A Crucial Test", newsOutlet: "BBC News")
+    private var popularNews: some View {
+        PopularNews(newsImage:
+                        R.image.people()!,
+                    newsTitle:
+                        Constants.popularNewsTitle,
+                    newsOutlet:
+                        Constants.popularNewsOutlet)
         .background(Color(UIColor.systemGray6))
     }
 }

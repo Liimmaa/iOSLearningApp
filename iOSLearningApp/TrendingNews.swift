@@ -12,7 +12,7 @@ struct TrendingNews: View {
     var body: some View {
         trendingNewsList
     }
-    var trendingNewsWidget: some View {
+    private var trendingNewsWidget: some View {
         VStack(
             alignment: .leading,
             spacing: 20
@@ -20,22 +20,23 @@ struct TrendingNews: View {
             RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .fill(Color.gray.opacity(0.3))
                 .frame(width: 150, height: 40, alignment: Alignment.top)
-                .overlay(Text("Trending News"))
+                .overlay(Text(Constants.trendingNews))
                 .padding(.bottom, 10)
                 .font(.headline)
-            NewsTitle(newsTitle: newsTitle, font: .system(size: 22, weight: .bold))
+            NewsTitle(newsTitle: newsTitle,
+                      font: .system(size: 22, weight: .bold))
             HStack {
-                Text("Learn More")
-                Image(systemName: "arrow.right")
+                Text(Constants.learnMore)
+                Image(uiImage: Constants.Image.rightArrow)
             }
             .font(.headline)
         }
         .padding()
         .foregroundColor(.white)
-        .background(Image("warzone"))
+        .background(Image(uiImage: R.image.warzone()!))
         .cornerRadius(20)
     }
-    var trendingNewsList: some View {
+    private var trendingNewsList: some View {
         GeometryReader { geo in
             ScrollView(
                 .horizontal,
@@ -68,6 +69,6 @@ struct NewsTitle: View {
 
 struct TrendingNews_Previews: PreviewProvider {
     static var previews: some View {
-        TrendingNews(newsTitle: "Russia Claims Nearly 1000 Ukrainians Have Surrendered to Azovstal")
+        TrendingNews(newsTitle: Constants.trendingNewsTitle)
     }
 }

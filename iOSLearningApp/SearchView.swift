@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
-    @State private var searchText = ""
+    @State private var searchText = Constants.placeholder
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             header
@@ -21,40 +21,47 @@ struct SearchView: View {
             popularNews
         }
     }
-    var header: some View {
-        NavigationBar(navigationTitle: "NEWS", rightIcon2: "bell")
+    private var header: some View {
+        NavigationBar(navigationTitle:
+                        Constants.navNewsTitle,
+                      rightIcon2:
+                        Constants.Image.navRightNotificationIcon)
     }
-    var popularNewsHeader: some View {
+    private var popularNewsHeader: some View {
         HStack {
-            Text("Popular News")
+            Text(Constants.popularNews)
             Spacer()
-            Text("Show More")
+            Text(Constants.popularNewsSubtitle)
                 .foregroundColor(.gray)
         }
         .font(.headline)
         .padding()
     }
-    var popularNews: some View {
-        PopularNews(newsImage: "people",
-                    newsTitle: "The 'Lucky Country' is Facing A Crucial Test", newsOutlet: "BBC News")
+    private var popularNews: some View {
+        PopularNews(newsImage:
+                        R.image.people()!,
+                    newsTitle: Constants.popularNewsTitle,
+                    newsOutlet:
+                        Constants.popularNewsOutlet)
         .background(Color(UIColor.systemGray6))
     }
-    var searchBar: some View {
+    private var searchBar: some View {
         HStack {
-            Image(systemName: "magnifyingglass").foregroundColor(.gray)
-            TextField("Search", text: $searchText)
+            Image(uiImage: Constants.Image.tabSearch).foregroundColor(.gray)
+            TextField(Constants.tabTitleSearch,
+                      text: $searchText)
                 .font(Font.system(size: 21))
         }
         .padding(15)
         .background(Color(UIColor.systemGray5))
         .cornerRadius(10)
     }
-    var searchOptionsView: some View {
+    private var searchOptionsView: some View {
             HStack(spacing: 20) {
                 ForEach(0..<5) {_ in
                     RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(Color.gray, lineWidth: 1)
                         .frame(width: 130, height: 55)
-                        .overlay(Text("All"))
+                        .overlay(Text(Constants.searchOption))
                         .font(.body)
                 }
             }

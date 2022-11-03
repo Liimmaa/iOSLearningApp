@@ -17,11 +17,16 @@ struct DetailView: View {
         .ignoresSafeArea()
         .navigationBarHidden(true)
     }
-    var header: some View {
-        NavigationBar(navigationTitle: "DETAIL", rightIcon1: "square.and.arrow.up", rightIcon2: "bookmark")
+    private var header: some View {
+        NavigationBar(navigationTitle:
+                        Constants.navDetailTitle,
+                      rightIcon1:
+                        Constants.Image.navRightSaveIcon,
+                      rightIcon2:
+                        Constants.Image.navRightBookmarkIcon)
             .padding(.top, 25)
     }
-    var newsDetail: some View {
+    private var newsDetail: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 25) {
                 imageReader
@@ -31,9 +36,9 @@ struct DetailView: View {
             }
         }
     }
-    var imageReader: some View {
+    private var imageReader: some View {
         GeometryReader { geo in
-            Image("warzone")
+            Image(uiImage: R.image.warzone()!)
                 .resizable()
                 .scaledToFill()
                 .frame(width: geo.size.width, height: geo.size.height)
@@ -42,18 +47,19 @@ struct DetailView: View {
         .scaledToFill()
         .clipped()
     }
-    var newsTitle: some View {
-        NewsTitle(newsTitle: "Russia Claims Nearly 1,000 Ukrainians Have Surrendered At Azovstal",
+    private var newsTitle: some View {
+        NewsTitle(newsTitle: Constants.trendingNewsTitle,
                   font: .system(size: 22, weight: .semibold))
             .lineSpacing(10)
     }
-    var newsOutlet: some View {
-        NewsOutlet(newsOutlet: "BBC NEWS", readTime: "1 min read")
+    private var newsOutlet: some View {
+        NewsOutlet(newsOutlet: Constants.popularNewsOutlet,
+                   readTime: Constants.popularNewsReadTime)
         .foregroundColor(.gray)
         .font(.system(size: 15, weight: .semibold))
     }
-    var newsSummary: some View {
-        Text("Our live coverage of the war in Ukraine has moved here. The Soviet victory flag from World War II is beginning to appear across occupied parts of ")
+    private var newsSummary: some View {
+        Text(Constants.newsContent)
             .lineSpacing(10)
             .foregroundColor(Color(UIColor.gray))
             .font(.system(size: 18, weight: .medium))
