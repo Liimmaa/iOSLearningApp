@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A05509B2908BA6B00EBBB3A /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 7A05509A2908BA6B00EBBB3A /* Rswift */; };
+		7A2E9B412908C3E100667D58 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E9B402908C3E100667D58 /* R.generated.swift */; };
+		7A48272D28EEAE040073E04B /* TrendingNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48272C28EEAE040073E04B /* TrendingNews.swift */; };
+		7A48272F28EEAE460073E04B /* PopularNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48272E28EEAE460073E04B /* PopularNews.swift */; };
+		7A48273228F24B690073E04B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48273128F24B690073E04B /* DetailView.swift */; };
+		7A48273428F261E00073E04B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48273328F261E00073E04B /* SearchView.swift */; };
+		7A48276C28F4FC9D0073E04B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48276B28F4FC9C0073E04B /* NavigationBar.swift */; };
+		7A48276E28F5101F0073E04B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A48276D28F5101E0073E04B /* Assets.xcassets */; };
+		7A48277528FB42E10073E04B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48277428FB42E00073E04B /* AppConstants.swift */; };
 		7A7E9A4B28EE439C00AD7201 /* IOSLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A4A28EE439C00AD7201 /* IOSLearningApp.swift */; };
-		7A7E9A4D28EE439C00AD7201 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A4C28EE439C00AD7201 /* ContentView.swift */; };
-		7A7E9A4F28EE439E00AD7201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7E9A4E28EE439E00AD7201 /* Assets.xcassets */; };
+		7A7E9A4D28EE439C00AD7201 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A4C28EE439C00AD7201 /* HomeView.swift */; };
 		7A7E9A5228EE439E00AD7201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7E9A5128EE439E00AD7201 /* Preview Assets.xcassets */; };
 		7A7E9A5C28EE439E00AD7201 /* IOSLearningAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A5B28EE439E00AD7201 /* IOSLearningAppTests.swift */; };
 		7A7E9A6628EE439E00AD7201 /* IOSLearningAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E9A6528EE439E00AD7201 /* IOSLearningAppUITests.swift */; };
@@ -35,10 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A2E9B402908C3E100667D58 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		7A48272C28EEAE040073E04B /* TrendingNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingNews.swift; sourceTree = "<group>"; };
+		7A48272E28EEAE460073E04B /* PopularNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularNews.swift; sourceTree = "<group>"; };
+		7A48273128F24B690073E04B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7A48273328F261E00073E04B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7A48276B28F4FC9C0073E04B /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		7A48276D28F5101E0073E04B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A48277428FB42E00073E04B /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		7A7E9A4728EE439C00AD7201 /* iOSLearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7E9A4A28EE439C00AD7201 /* IOSLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLearningApp.swift; sourceTree = "<group>"; };
-		7A7E9A4C28EE439C00AD7201 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7A7E9A4E28EE439E00AD7201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A7E9A4C28EE439C00AD7201 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7A7E9A5128EE439E00AD7201 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A7E9A5728EE439E00AD7201 /* iOSLearningAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLearningAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7E9A5B28EE439E00AD7201 /* IOSLearningAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLearningAppTests.swift; sourceTree = "<group>"; };
@@ -53,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A05509B2908BA6B00EBBB3A /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +89,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A48273028F24ACD0073E04B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		7A7E9A3E28EE439C00AD7201 = {
 			isa = PBXGroup;
 			children = (
+				7A2E9B402908C3E100667D58 /* R.generated.swift */,
 				7AA69DA428EE5BB80056F192 /* codemagic.yaml */,
 				7A7E9A4928EE439C00AD7201 /* iOSLearningApp */,
 				7A7E9A5A28EE439E00AD7201 /* iOSLearningAppTests */,
@@ -98,8 +122,15 @@
 			isa = PBXGroup;
 			children = (
 				7A7E9A4A28EE439C00AD7201 /* IOSLearningApp.swift */,
-				7A7E9A4C28EE439C00AD7201 /* ContentView.swift */,
-				7A7E9A4E28EE439E00AD7201 /* Assets.xcassets */,
+				7A7E9A4C28EE439C00AD7201 /* HomeView.swift */,
+				7A48272C28EEAE040073E04B /* TrendingNews.swift */,
+				7A48272E28EEAE460073E04B /* PopularNews.swift */,
+				7A48273128F24B690073E04B /* DetailView.swift */,
+				7A48273328F261E00073E04B /* SearchView.swift */,
+				7A48276B28F4FC9C0073E04B /* NavigationBar.swift */,
+				7A48277428FB42E00073E04B /* AppConstants.swift */,
+				7A48276D28F5101E0073E04B /* Assets.xcassets */,
+				7A48273028F24ACD0073E04B /* Home */,
 				7A7E9A5028EE439E00AD7201 /* Preview Content */,
 			);
 			path = iOSLearningApp;
@@ -137,16 +168,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A7E9A6B28EE439E00AD7201 /* Build configuration list for PBXNativeTarget "iOSLearningApp" */;
 			buildPhases = (
+				7AA69DA328EE56070056F192 /* ShellScript */,
+				7A05509C2908BB2C00EBBB3A /* ShellScript */,
 				7A7E9A4328EE439C00AD7201 /* Sources */,
 				7A7E9A4428EE439C00AD7201 /* Frameworks */,
 				7A7E9A4528EE439C00AD7201 /* Resources */,
-				7AA69DA328EE56070056F192 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iOSLearningApp;
+			packageProductDependencies = (
+				7A05509A2908BA6B00EBBB3A /* Rswift */,
+			);
 			productName = iOSLearningApp;
 			productReference = 7A7E9A4728EE439C00AD7201 /* iOSLearningApp.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +254,9 @@
 				Base,
 			);
 			mainGroup = 7A7E9A3E28EE439C00AD7201;
+			packageReferences = (
+				7A0550992908BA6B00EBBB3A /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			productRefGroup = 7A7E9A4828EE439C00AD7201 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,8 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA69DA528EE5BB80056F192 /* codemagic.yaml in Resources */,
+				7A48276E28F5101F0073E04B /* Assets.xcassets in Resources */,
 				7A7E9A5228EE439E00AD7201 /* Preview Assets.xcassets in Resources */,
-				7A7E9A4F28EE439E00AD7201 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +296,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7A05509C2908BB2C00EBBB3A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$SRCROOT/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$SRCROOT/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		7AA69DA328EE56070056F192 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,8 +339,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7E9A4D28EE439C00AD7201 /* ContentView.swift in Sources */,
+				7A48272F28EEAE460073E04B /* PopularNews.swift in Sources */,
+				7A48277528FB42E10073E04B /* AppConstants.swift in Sources */,
+				7A7E9A4D28EE439C00AD7201 /* HomeView.swift in Sources */,
 				7A7E9A4B28EE439C00AD7201 /* IOSLearningApp.swift in Sources */,
+				7A48273228F24B690073E04B /* DetailView.swift in Sources */,
+				7A48276C28F4FC9D0073E04B /* NavigationBar.swift in Sources */,
+				7A48273428F261E00073E04B /* SearchView.swift in Sources */,
+				7A2E9B412908C3E100667D58 /* R.generated.swift in Sources */,
+				7A48272D28EEAE040073E04B /* TrendingNews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +672,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A0550992908BA6B00EBBB3A /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A05509A2908BA6B00EBBB3A /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0550992908BA6B00EBBB3A /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A7E9A3F28EE439C00AD7201 /* Project object */;
 }
