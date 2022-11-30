@@ -70,7 +70,7 @@ struct NewsOutlet: View {
 
 struct PopularNews_Previews: PreviewProvider {
     static var previews: some View {
-        PopularNews(newsImage: "warzone",
+        PopularNews(newsImage: Constants.Image.warzone,
                     newsTitle: Constants.popularNewsTitle,
                     newsOutlet: "By \(Constants.popularNewsOutlet)",
                     readTime: Constants.popularNewsReadTime)

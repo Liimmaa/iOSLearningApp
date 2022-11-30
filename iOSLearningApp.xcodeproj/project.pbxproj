@@ -38,7 +38,6 @@
 		7AC8C441291B1952005D8D16 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8C434291B1952005D8D16 /* EndPointType.swift */; };
 		7AC8C445291B2932005D8D16 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8C444291B2932005D8D16 /* News.swift */; };
 		7AC8C448291B3116005D8D16 /* NewsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8C447291B3116005D8D16 /* NewsEndpoint.swift */; };
-		7AC8C44B291B3779005D8D16 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8C44A291B3779005D8D16 /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +91,6 @@
 		7AC8C434291B1952005D8D16 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		7AC8C444291B2932005D8D16 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		7AC8C447291B3116005D8D16 /* NewsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEndpoint.swift; sourceTree = "<group>"; };
-		7AC8C44A291B3779005D8D16 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,7 +273,6 @@
 		7AC8C449291B375F005D8D16 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7AC8C44A291B3779005D8D16 /* NewsViewModel.swift */,
 				7A17FFFD29344B54006E8052 /* NewsListViewModel.swift */,
 			);
 			path = ViewModel;
@@ -464,7 +461,6 @@
 				7AC8C439291B1952005D8D16 /* URLParameterEncoder.swift in Sources */,
 				7AC8C43D291B1952005D8D16 /* NetworkRouter.swift in Sources */,
 				7AC8C441291B1952005D8D16 /* EndPointType.swift in Sources */,
-				7AC8C44B291B3779005D8D16 /* NewsViewModel.swift in Sources */,
 				7A48277528FB42E10073E04B /* AppConstants.swift in Sources */,
 				7AC8C440291B1952005D8D16 /* Router.swift in Sources */,
 				7AC8C43B291B1952005D8D16 /* NetworkManager.swift in Sources */,
