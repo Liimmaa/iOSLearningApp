@@ -8,23 +8,28 @@
 import SwiftUI
 
 struct PopularNews: View {
-    var newsImage: UIImage
+    var newsImage: String
     var newsTitle: String
     var newsOutlet: String
     var readTime: String?
+
     var body: some View {
-        ScrollView {
-            ForEach(0..<10) {_ in
-                popularNewsWidget
-            }
-        }
+        popularNewsWidget
     }
+
     private  var popularNewsWidget: some View {
         VStack(spacing: 20) {
             HStack {
-                Image(uiImage: newsImage)
-                    .resizable()
+                AsyncImage(url: URL(string: newsImage)) { image in
+                    image
+                        .resizable()
+                } placeholder: {
+                    ProgressView()
+                        .padding(.leading, 30)
+                        .tint(.red)
+                }
                     .frame(width: 80, height: 80, alignment: .leading)
+                    .background(Color.gray)
                     .scaledToFit()
                     .cornerRadius(10.0)
                 newsTitleRow
@@ -35,6 +40,7 @@ struct PopularNews: View {
             .padding(.horizontal)
         }
     }
+
     private var newsTitleRow: some View {
         VStack(alignment: .leading, spacing: 20) {
             NewsTitle(newsTitle: newsTitle,
@@ -64,7 +70,7 @@ struct NewsOutlet: View {
 
 struct PopularNews_Previews: PreviewProvider {
     static var previews: some View {
-        PopularNews(newsImage: R.image.people()!,
+        PopularNews(newsImage: "warzone",
                     newsTitle: Constants.popularNewsTitle,
                     newsOutlet: "By \(Constants.popularNewsOutlet)",
                     readTime: Constants.popularNewsReadTime)

@@ -20,8 +20,7 @@ enum NewsListEvent {
     case retry
     case reload
     case fetchNextPage
-    case didFetchResultsSuccessfully(_ results: [News])
+    case didFetchResultsSuccessfully
     case didFetchResultsFailure(_ error: Error)
     case didFetchResultsEmpty
-    case openNewsDetail(_ news: News)
 }

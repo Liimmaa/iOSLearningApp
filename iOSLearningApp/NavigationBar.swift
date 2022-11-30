@@ -9,22 +9,27 @@ import SwiftUI
 
 struct NavigationBar: View {
     var navigationTitle: String
-    var rightIcon1: UIImage?
-    var rightIcon2: UIImage?
+    var leftIcon: String?
+    var rightIcon1: String?
+    var rightIcon2: String?
+
     var body: some View {
         HStack {
             HStack {
-                Image(uiImage: Constants.Image.navBarMoreIcon)
-                Text(navigationTitle)
+                if let leftIcon = leftIcon {
+                    Image(systemName: leftIcon)
+                    Text(navigationTitle)
+                }
             }
+            .foregroundColor(.black)
             .font(.system(size: 20, weight: .bold))
             Spacer()
             HStack(spacing: 20) {
                 if let rightIcon1 = rightIcon1 {
-                    Image(uiImage: rightIcon1)
+                    Image(systemName: rightIcon1)
                 }
                 if let rightIcon2 = rightIcon2 {
-                    Image(uiImage: rightIcon2)
+                    Image(systemName: rightIcon2)
                 }
             }
             .font(.system(size: 25))
@@ -36,7 +41,7 @@ struct NavigationBar: View {
 struct NavigationBar_Previews: PreviewProvider {
     static var previews: some View {
         NavigationBar(navigationTitle:
-                        Constants.navNewsTitle,
+                        Constants.navNewsTitle, leftIcon: Constants.Image.navBarMoreIcon,
                       rightIcon1:
                         Constants.Image.navRightSearchIcon,
                       rightIcon2:
