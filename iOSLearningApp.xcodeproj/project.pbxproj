@@ -125,13 +125,6 @@
 			path = StateManager;
 			sourceTree = "<group>";
 		};
-		7A48273028F24ACD0073E04B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		7A7E9A3E28EE439C00AD7201 = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +160,6 @@
 				7A48276B28F4FC9C0073E04B /* NavigationBar.swift */,
 				7A48277428FB42E00073E04B /* AppConstants.swift */,
 				7A48276D28F5101E0073E04B /* Assets.xcassets */,
-				7A48273028F24ACD0073E04B /* Home */,
 				7A7E9A5028EE439E00AD7201 /* Preview Content */,
 			);
 			path = iOSLearningApp;
