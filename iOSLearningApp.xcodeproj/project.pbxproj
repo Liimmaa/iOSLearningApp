@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A05509B2908BA6B00EBBB3A /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 7A05509A2908BA6B00EBBB3A /* Rswift */; };
 		7A17FFF82934456A006E8052 /* NewsListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A17FFF72934456A006E8052 /* NewsListState.swift */; };
 		7A17FFFA2934480D006E8052 /* StateMachineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A17FFF92934480D006E8052 /* StateMachineProtocol.swift */; };
 		7A17FFFC29344967006E8052 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A17FFFB29344967006E8052 /* StateMachine.swift */; };
 		7A17FFFE29344B54006E8052 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A17FFFD29344B54006E8052 /* NewsListViewModel.swift */; };
-		7A2E9B412908C3E100667D58 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E9B402908C3E100667D58 /* R.generated.swift */; };
 		7A48272D28EEAE040073E04B /* TrendingNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48272C28EEAE040073E04B /* TrendingNews.swift */; };
 		7A48272F28EEAE460073E04B /* PopularNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48272E28EEAE460073E04B /* PopularNews.swift */; };
 		7A48273228F24B690073E04B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48273128F24B690073E04B /* DetailView.swift */; };
@@ -62,7 +60,6 @@
 		7A17FFF92934480D006E8052 /* StateMachineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineProtocol.swift; sourceTree = "<group>"; };
 		7A17FFFB29344967006E8052 /* StateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
 		7A17FFFD29344B54006E8052 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
-		7A2E9B402908C3E100667D58 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7A48272C28EEAE040073E04B /* TrendingNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingNews.swift; sourceTree = "<group>"; };
 		7A48272E28EEAE460073E04B /* PopularNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularNews.swift; sourceTree = "<group>"; };
 		7A48273128F24B690073E04B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A05509B2908BA6B00EBBB3A /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +135,6 @@
 		7A7E9A3E28EE439C00AD7201 = {
 			isa = PBXGroup;
 			children = (
-				7A2E9B402908C3E100667D58 /* R.generated.swift */,
 				7AA69DA428EE5BB80056F192 /* codemagic.yaml */,
 				7A7E9A4928EE439C00AD7201 /* iOSLearningApp */,
 				7A7E9A5A28EE439E00AD7201 /* iOSLearningAppTests */,
@@ -297,7 +292,6 @@
 			);
 			name = iOSLearningApp;
 			packageProductDependencies = (
-				7A05509A2908BA6B00EBBB3A /* Rswift */,
 			);
 			productName = iOSLearningApp;
 			productReference = 7A7E9A4728EE439C00AD7201 /* iOSLearningApp.app */;
@@ -372,7 +366,6 @@
 			);
 			mainGroup = 7A7E9A3E28EE439C00AD7201;
 			packageReferences = (
-				7A0550992908BA6B00EBBB3A /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 7A7E9A4828EE439C00AD7201 /* Products */;
 			projectDirPath = "";
@@ -476,7 +469,6 @@
 				7AC8C43E291B1952005D8D16 /* HTTPTask.swift in Sources */,
 				7A17FFFA2934480D006E8052 /* StateMachineProtocol.swift in Sources */,
 				7A17FFFC29344967006E8052 /* StateMachine.swift in Sources */,
-				7A2E9B412908C3E100667D58 /* R.generated.swift in Sources */,
 				7AC8C448291B3116005D8D16 /* NewsEndpoint.swift in Sources */,
 				7AC8C445291B2932005D8D16 /* News.swift in Sources */,
 				7A48272D28EEAE040073E04B /* TrendingNews.swift in Sources */,
@@ -804,25 +796,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		7A0550992908BA6B00EBBB3A /* XCRemoteSwiftPackageReference "R.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
-			requirement = {
-				kind = exactVersion;
-				version = 5.4.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		7A05509A2908BA6B00EBBB3A /* Rswift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7A0550992908BA6B00EBBB3A /* XCRemoteSwiftPackageReference "R.swift" */;
-			productName = Rswift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A7E9A3F28EE439C00AD7201 /* Project object */;
 }
