@@ -8,7 +8,9 @@
 import Foundation
 
 class Router<EndPoint: EndPointType>: NetworkRouter {
+
     private var task: URLSessionTask?
+
     func request(_ route: EndPoint, completion: @escaping NetworkRouterCompletion) {
         let session = URLSession.shared
         do {
@@ -21,9 +23,11 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
         }
         self.task?.resume()
     }
+
     func cancel() {
         self.task?.cancel()
     }
+
     fileprivate func buildRequest(from route: EndPoint) throws -> URLRequest {
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
                                  cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
@@ -51,6 +55,7 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
             throw error
         }
     }
+
     fileprivate func configureParameters(bodyParameters: Parameters?,
                                          urlParameters: Parameters?,
                                          request: inout URLRequest) throws {
@@ -65,6 +70,7 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
             throw error
         }
     }
+
     fileprivate func addAdditionalHeaders(_ addAdditionalHeaders: HTTPHeaders?, request: inout URLRequest) {
         guard let headers = addAdditionalHeaders else { return }
         for (key, value) in headers {

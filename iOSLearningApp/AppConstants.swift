@@ -25,19 +25,28 @@ struct Constants {
         static let learnMore = "Learn More"
         static let newsContent = "Our live coverage of the war in Ukraine has moved here. The Soviet victory flag from World War II is beginning to appear across occupied parts of "
         static let searchOption = "All"
-        static let placeholder = ""
+        static let placeholder = "Coming Soon..."
+        static let loading = "Loading..."
+        static let oops = "Oops... Something went wrong"
+        static let noResults = "Oo... No results 🥺"
+        static let holdOn = "Hold on a minute"
+        static let keyword = "russia-war"
+        static let sortByPopularity = "popularity"
+        static let empty = ""
 
     struct Image {
-        static let tabHome = UIImage(systemName: "house")!
-        static let tabSearch = UIImage(systemName: "magnifyingglass")!
-        static let tabSaved = UIImage(systemName: "bookmark")!
-        static let tabProfile = UIImage(systemName: "person")!
-        static let rightArrow = UIImage(systemName: "arrow.right")!
-        static let navBarMoreIcon = UIImage(systemName: "line.3.horizontal.decrease")!
-        static let navRightSearchIcon = UIImage(systemName: "magnifyingglass")!
-        static let navRightNotificationIcon = UIImage(systemName: "bell")!
-        static let navRightSaveIcon = UIImage(systemName: "square.and.arrow.up")!
-        static let navRightBookmarkIcon = UIImage(systemName: "bookmark")!
+        static let tabHome = "house"
+        static let tabSearch = "magnifyingglass"
+        static let tabSaved = "bookmark"
+        static let tabProfile = "person"
+        static let backArrow = "arrow.left"
+        static let rightArrow = "arrow.right"
+        static let navBarMoreIcon = "line.3.horizontal.decrease"
+        static let navRightSearchIcon = "magnifyingglass"
+        static let navRightNotificationIcon = "bell"
+        static let navRightSaveIcon = "square.and.arrow.up"
+        static let navRightBookmarkIcon = "bookmark"
+        static let warzone = "warzone"
     }
 }
 

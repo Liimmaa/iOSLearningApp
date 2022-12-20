@@ -10,7 +10,7 @@ import SwiftUI
 struct TrendingNews: View {
     var newsTitle: String
     var body: some View {
-        trendingNewsList
+        trendingNewsWidget
     }
     private var trendingNewsWidget: some View {
         VStack(
@@ -25,33 +25,16 @@ struct TrendingNews: View {
                 .font(.headline)
             NewsTitle(newsTitle: newsTitle,
                       font: .system(size: 22, weight: .bold))
-            HStack {
+            HStack(alignment: .center) {
+                Spacer()
                 Text(Constants.learnMore)
-                Image(uiImage: Constants.Image.rightArrow)
+                Image(systemName: Constants.Image.rightArrow)
+                    .foregroundColor(Color.white)
             }
             .font(.headline)
         }
         .padding()
         .foregroundColor(.white)
-        .background(Image(uiImage: R.image.warzone()!))
-        .cornerRadius(20)
-    }
-    private var trendingNewsList: some View {
-        GeometryReader { geo in
-            ScrollView(
-                .horizontal,
-                showsIndicators: false
-            ) {
-                HStack(spacing: 20) {
-                    ForEach(0..<10) {_ in
-                        trendingNewsWidget
-                            .frame(width: geo.size.width * 0.85)
-                    }
-                }
-                .padding(.horizontal)
-            }
-        }
-        .frame(height: 250)
     }
 }
 
@@ -63,7 +46,7 @@ struct NewsTitle: View {
             .font(font)
             .fixedSize(horizontal: false, vertical: true)
             .multilineTextAlignment(.leading)
-            .lineLimit(nil)
+            .lineLimit(2)
     }
 }
 

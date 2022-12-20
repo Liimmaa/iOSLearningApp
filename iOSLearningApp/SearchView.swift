@@ -39,7 +39,7 @@ struct SearchView: View {
     }
     private var popularNews: some View {
         PopularNews(newsImage:
-                        R.image.people()!,
+                        Constants.Image.warzone,
                     newsTitle: Constants.popularNewsTitle,
                     newsOutlet:
                         Constants.popularNewsOutlet)
@@ -47,7 +47,7 @@ struct SearchView: View {
     }
     private var searchBar: some View {
         HStack {
-            Image(uiImage: Constants.Image.tabSearch).foregroundColor(.gray)
+            Image(systemName: Constants.Image.tabSearch).foregroundColor(.gray)
             TextField(Constants.tabTitleSearch,
                       text: $searchText)
                 .font(Font.system(size: 21))
