@@ -1,0 +1,4 @@
+excluded:
+  - "R.generated.swift"
+  - builds
+
